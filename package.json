@@ -1,0 +1,42 @@
+{
+  "name": "pt-apartment-scraper",
+  "version": "0.0.1",
+  "description": "Scan the list of apartments to rent and create new tasks to Todoist",
+  "main": "index.js",
+  "bin": {
+    "scrape": "./bin/scrape"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "config": "^1.14.0",
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.7.7",
+    "hiredis": "^0.4.0",
+    "iconv-lite": "^0.4.10",
+    "merge2": "^0.3.5",
+    "node-uuid": "^1.4.3",
+    "redis": "^0.12.1",
+    "request": "^2.58.0",
+    "slug": "^0.9.1",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imankulov/pt-apartment-scraper.git"
+  },
+  "author": "Roman Imankulov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imankulov/pt-apartment-scraper/issues"
+  },
+  "homepage": "https://github.com/imankulov/pt-apartment-scraper"
+}
