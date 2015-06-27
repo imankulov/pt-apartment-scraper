@@ -4,5 +4,6 @@
   "OLX_URL": "http://porto.olx.pt/nf/apartamento-casa-a-venda-cat-367/price_from,300,price_to,1000,sqm_from,80,type,2",
   "TODOIST_API_ENDPOINT": "http://todoist.com/API/v6/sync",
   "TODOIST_PROJECT_ID": "your project Id as an integer, not string",
-  "TODOIST_API_TOKEN":  "your api token"
+  "TODOIST_API_TOKEN":  "your api token",
+  "STOP_WORDS": ["maia", "ermesinde"]
 }
