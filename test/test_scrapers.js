@@ -5,8 +5,8 @@ var assert = require("assert"),
     stream = require("stream"),
     CustoJustoScraper = require("../lib/custo_justo").CustoJustoScraper,
     ImovirtualScraper = require("../lib/imovirtual").ImovirtualScraper,
-    OLXScraper = require("../lib/olx").OLXScraper;
-
+    OLXScraper = require("../lib/olx").OLXScraper,
+    SapoScraper = require("../lib/sapo").SapoScraper;
 
 /**
  * Helper function to get the mock filename
@@ -65,5 +65,18 @@ describe('OLXScraper', function() {
             done();
         });
         fs.createReadStream(getFixturePath("olx.html")).pipe(new OLXScraper()).pipe(endpoint);
+    });
+});
+
+
+describe('Sapo.pt scraper', function() {
+    it('scrapes HTML', function(done) {
+        var endpoint = new TestEndpoint();
+        endpoint.on('finish', function() {
+            var item = endpoint.itemsBuffer[0];
+            assert.deepEqual(item, require(getFixturePath("sapo.json")));
+            done();
+        });
+        fs.createReadStream(getFixturePath("sapo.html")).pipe(new SapoScraper()).pipe(endpoint);
     });
 });

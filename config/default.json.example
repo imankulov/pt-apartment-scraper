@@ -2,6 +2,7 @@
   "CUSTO_JUSTO_URL": "http://www.custojusto.pt/porto/apartamentos-arrendar?ps=5&pe=7&ros=5&roe=6&ss=6",
   "IMOVIRTUAL_URL": "http://www.imovirtual.com/imoveis/apartamentos/arrendar/-/Porto/size_from,2,size_to,3,price_from,500,price_to,1000,sort,3,list_mode,3,a,1178-1179-1180-1181-1182",
   "OLX_URL": "http://porto.olx.pt/nf/apartamento-casa-a-venda-cat-367/price_from,300,price_to,1000,sqm_from,80,type,2",
+  "SAPO_URL": "http://casa.sapo.pt/Alugar/Apartamentos/Apartamento/Alugar/?sa=13&gp=1000&lp=500&mpr=3,4&or=10&pn=1",
   "TODOIST_API_ENDPOINT": "http://todoist.com/API/v6/sync",
   "TODOIST_PROJECT_ID": "your project Id as an integer, not string",
   "TODOIST_API_TOKEN":  "your api token",
